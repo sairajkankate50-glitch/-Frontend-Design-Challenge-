@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useParams } from "react-router-dom";
+// import { useParams } from "react-router-dom";
 import "./ScanDetail.css";
 
 // Mock Data
@@ -48,7 +48,7 @@ const scanDetails = {
 };
 
 const ScanDetail = () => {
-  const { id } = useParams();
+//   const { id } = useParams();
   const [activeTab, setActiveTab] = useState("activity");
 
   return (

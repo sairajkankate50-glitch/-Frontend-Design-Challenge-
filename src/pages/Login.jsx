@@ -83,7 +83,7 @@ const Login = () => {
             </div>
 
             {/* Submit Button */}
-            <button type="submit">Create Account</button>
+            <button type="submit" onClick={toggleTheme}>Create Account</button>
 
             {/* Divider */}
             <div className="divider">
