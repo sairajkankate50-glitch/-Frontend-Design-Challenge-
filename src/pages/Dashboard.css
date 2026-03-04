@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.dashboard-page {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #0f0f0f;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.sidebar nav ul li:hover {
+  color: #0cc8a8;
+}
+
+/* Profile at bottom */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  background-color: #0cc8a8;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+/* Stats bar */
+.stats-bar {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.stat {
+  flex: 1;
+  padding: 15px;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.stat.critical { background-color: #f44336; }
+.stat.high { background-color: #ff9800; }
+.stat.medium { background-color: #ffc107; }
+.stat.low { background-color: #4caf50; }
+
+/* Scan Table */
+.scan-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.scan-table th, .scan-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.scan-table tbody tr:hover {
+  background-color: #e0f7fa;
+  cursor: pointer;
+}
+
+/* Status chips */
+.status-chip {
+  padding: 4px 8px;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.status-chip.completed { background-color: #4caf50; }
+.status-chip.scheduled { background-color: #9e9e9e; }
+.status-chip.failed { background-color: #f44336; }
+
+/* Vulnerability badges */
+.badge {
+  display: inline-block;
+  padding: 2px 6px;
+  margin-right: 4px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.badge.critical { background-color: #f44336; }
+.badge.high { background-color: #ff9800; }
+.badge.medium { background-color: #ffc107; color: #000; }
+.badge.low { background-color: #4caf50; }
